@@ -1133,5 +1133,86 @@ bun run build</code></pre>
   featured: false,
   category: "web",
   date: "2026-03-25",
-}
+  },
+  {
+    slug: "elements-resume-builder",
+    title: "Elements Resume Builder",
+    shortDescription: "Editor visual drag & drop pentru crearea CV-urilor profesionale, bazat pe Unlayer Elements, cu previzualizare în timp real și export HTML/PDF.",
+    fullDescription: `
+      <h2>Despre Proiect</h2>
+      <p>Elements Resume Builder este o <em>aplicație web modernă</em> care combină editorul visual Unlayer cu React pentru a genera CV-uri profesionale printr-un interfață drag & drop intuitivă. Proiectul include previzualizare în timp real, export HTML și PDF, și un design glassmorphism cu teme multiple.</p>
+
+      <br><br>
+
+      <h2>Funcționalități Cheie</h2>
+      <ul>
+        <li><strong>Editor Visual Drag & Drop:</strong> Interfață intuitivă pentru construirea CV-ului fără cod</li>
+        <li><strong>Previzualizare Live:</strong> Modificările se sincronizează în timp real între editor și preview</li>
+        <li><strong>Export HTML:</strong> Descarcă design-ul editorului ca fișier HTML curat</li>
+        <li><strong>Export PDF:</strong> Generează PDF din cardul de previzualizare a CV-ului</li>
+        <li><strong>Mai Multe Șabloane:</strong> Teme Dark Professional, Light Minimal și Creative Modern</li>
+        <li><strong>Secțiuni Personalizabile:</strong> Rezumat, Skills, Proiecte, Educație, Realizări</li>
+      </ul>
+
+      <br><br>
+
+      <h2>Tehnologii Utilizate</h2>
+      <p>Proiectul este construit folosind tehnologii moderne:</p>
+      <ul>
+        <li><strong>Frontend:</strong> React + Vite pentru dezvoltare rapidă</li>
+        <li><strong>Editor:</strong> @unlayer/react-elements și react-email-editor</li>
+        <li><strong>Styling:</strong> CSS3 cu glassmorphism, gradients și animații</li>
+      </ul>
+
+      <br><br>
+
+      <h2>Instalare și Dezvoltare Locală</h2>
+      <p>Pentru a rula proiectul local, urmați acești pași:</p>
+
+      <h3>Pași de Instalare</h3>
+      <ol>
+        <li>Clonați repository-ul: <code>git clone https://github.com/itsiamdev/elements-resume-builder.git</code></li>
+        <li>Intrați în director: <code>cd elements-resume-builder</code></li>
+        <li>Instalați dependențele: <code>npm install</code></li>
+        <li>Porniți serverul: <code>npm run dev</code></li>
+      </ol>
+
+      <p>Aplicația va fi disponibilă la <code>http://localhost:5173</code>.</p>
+
+      <h3>Build de Producție</h3>
+      <p>Pentru a crea un build optimizat: <code>npm run build</code></p>
+
+      <br><br>
+
+      <h2>Structura Proiectului</h2>
+      <pre><code>elements-resume-builder/
+├── public/
+│   └── screenshots/          # Screenshots for README
+├── src/
+│   ├── App.jsx               # Main app: layout, editor, export logic, template preview
+│   ├── App.css               # Modern glassmorphism styles
+│   ├── main.jsx              # React entry point
+│   ├── templates/
+│   │   └── index.js          # Template configurations (3 themes)
+│   └── components/
+│       ├── Header.jsx        # Glassmorphism navbar with export buttons & template selector
+│       └── TemplateSelector.jsx # Template dropdown selector
+├── package.json              # Dependencies and scripts
+├── vite.config.js            # Vite configuration
+├── index.html                # HTML entry point
+└── README.md                 # Documentation</code></pre>
+
+      <br><br>
+
+      <h2>Licență</h2>
+      <p>Proiect open-source, licențiat sub <strong>MIT License</strong>.</p>
+    `,
+    tech: ["React", "Vite", "Unlayer", "react-email-editor", "CSS3"],
+    image: "/projects/elements-resume-builder.jpg",
+    githubUrl: "https://github.com/itsiamdev/elements-resume-builder",
+    liveUrl: "https://elements-resume-builder.vercel.app",
+    featured: true,
+    category: "web",
+    date: "2026-04-01"
+  }
 ];

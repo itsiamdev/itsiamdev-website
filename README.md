@@ -38,6 +38,7 @@ The site is meticulously built with React and TypeScript for robust type safety 
    - **Târgu Neamț Tourism Guide** - Digital guide for Târgu Neamț city attractions and history
    - **Olimpix** - Educational platform for student learning and exam preparation
    - **Jayson Tatum Portfolio** - Personal portfolio with project highlights
+   - **Elements Resume Builder** - Visual resume builder with drag & drop editor, live preview, and HTML/PDF export
    - High-quality images and live demos with GitHub deployment
 - **Skills Overview** 🛠️: Categorized competencies with proficiency levels:
    | Category | Technologies |
