@@ -1213,6 +1213,6 @@ bun run build</code></pre>
     liveUrl: "https://elements-resume-builder.vercel.app",
     featured: true,
     category: "web",
-    date: "2026-04-01"
-  }
+    date: "2026-07-17"
+}
 ];
