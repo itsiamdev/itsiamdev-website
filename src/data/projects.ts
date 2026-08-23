@@ -1208,7 +1208,7 @@ bun run build</code></pre>
       <p>Proiect open-source, licențiat sub <strong>MIT License</strong>.</p>
     `,
     tech: ["React", "Vite", "Unlayer", "react-email-editor", "CSS3"],
-    image: "/projects/elements-resume-builder.jpg",
+    image: "/projects/unlayer.png",
     githubUrl: "https://github.com/itsiamdev/elements-resume-builder",
     liveUrl: "https://elements-resume-builder.vercel.app",
     featured: true,
