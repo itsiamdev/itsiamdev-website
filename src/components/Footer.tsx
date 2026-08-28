@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Globe, Youtube, Music, Twitch } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary">Ionita Aurel Mihai</h3>
+            <h3 className="text-lg font-semibold mb-4 text-primary">Ioniță Aurel Mihai</h3>
             <p className="text-muted-foreground text-sm">
               Web developer pasionat de tehnologii moderne
             </p>
@@ -71,18 +71,63 @@ const Footer = () => {
 
           <div>
             <h4 className="text-sm font-semibold mb-4 text-foreground">Contact</h4>
-            <div className="flex justify-center gap-4">
-              <a href="https://github.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github size={20} />
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="https://twitter.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter size={20} />
               </a>
               <a href="https://www.linkedin.com/in/itsiamdev/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
+              <a href="https://bsky.app/profile/itsiamdev.bsky.social" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://tiktok.com/@itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://tumblr.com/blog/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://mastodon.social/@itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://github.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Github size={20} />
+              </a>
+              <a href="https://twitch.tv/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitch size={20} />
+              </a>
+              <a href="https://stackoverflow.com/users/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://patreon.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://pinterest.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://reddit.com/user/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://dribbble.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://nba.com/player/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://open.spotify.com/user/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Music size={20} />
+              </a>
+              <a href="https://ethereum.org" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://coinbase.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Globe size={20} />
+              </a>
+              <a href="https://www.youtube.com/@itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Youtube size={20} />
+              </a>
               <a href="mailto:ionitaaurel32@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={20} />
-              </a>
-              <a href="https://twitter.com/itsiamdev" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
