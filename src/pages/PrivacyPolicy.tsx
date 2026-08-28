@@ -182,8 +182,8 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="mt-4 p-6 bg-muted/50 rounded-lg border border-border/50">
                   <p className="text-foreground font-medium">Ioniță Aurel Mihai</p>
-                  <p>E-mail: <a href="mailto:ionitaaurel32@gmail.com" className="text-primary hover:underline">ionitaaurel32@gmail.com</a></p>
-                  <p>Site web: <a href="https://ionitaaurelmihai.vercel.app/" className="text-primary hover:underline">ionitaaurelmihai.vercel.app</a></p>
+                  <p>E-mail: <a href="mailto:itsiamdev@gmail.com" className="text-primary hover:underline">itsiamdev@gmail.com</a></p>
+                  <p>Site web: <a href="https://itsiamdev.com/" className="text-primary hover:underline">itsiamdev.com</a></p>
                   <p>Răspundem în maxim 30 de zile calendaristice de la primirea solicitării.</p>
                 </div>
               </section>
