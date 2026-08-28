@@ -52,7 +52,7 @@ const TermsAndConditions = () => {
 
               <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">6. Contact</h2>
               <p>
-                Pentru întrebări legate de acești Termeni și Condiții, ne puteți contacta la adresa de e-mail: ionitaaurel32@gmail.com.
+                Pentru întrebări legate de acești Termeni și Condiții, ne puteți contacta la adresa de e-mail: itsiamdev@gmail.com.
               </p>
             </div>
           </div>
