@@ -18,6 +18,8 @@ import {
   FaEthereum,
   FaYoutube,
   FaEnvelope,
+  FaFacebook,
+  FaInstagram,
 } from "react-icons/fa6";
 
 import {
@@ -169,6 +171,28 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaLinkedinIn size={20} />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="https://facebook.com/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaFacebook size={20} />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaInstagram size={20} />
               </a>
 
               {/* Bluesky */}
