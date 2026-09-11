@@ -25,6 +25,7 @@ import {
 import {
   SiBluesky,
   SiCoinbase,
+  SiDailydotdev,
 } from "react-icons/si";
 
 const Footer = () => {
@@ -248,6 +249,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaGithub size={20} />
+              </a>
+
+              {/* Daily.dev */}
+              <a
+                href="https://app.daily.dev/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Daily.dev"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiDailydotdev size={20} />
               </a>
 
               {/* Twitch */}
