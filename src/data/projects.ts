@@ -14,6 +14,104 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "vicecity-studio",
+    title: "ViceCity Studio",
+    shortDescription: "Aplicație web creativă și retro pentru construirea de scene și postere inspirate din atmosfera Vice City, cu editor vizual și experiență modernă de storytelling.",
+    fullDescription: `
+      <h2>Despre Proiect</h2>
+      <p><strong>ViceCity Studio</strong> este o aplicație web modernă dedicată creării de scene retro inspirate din atmosferă de film cu neon, palmieri și povești vizuale. Platforma combină un landing page de brand, un workflow bazat pe scene și un editor pentru compunerea unor postere stilizate, personalizate după gustul utilizatorului.</p>
+      <p>Proiectul are un stil foarte vizual și editorial, fiind ideal pentru crearea de compoziții cinematice de tip poster, scene de prezentare și povești grafice cu tonuri retro și futuriste.</p>
+
+      <br><br>
+
+      <h2>Funcționalități Cheie</h2>
+      <ul>
+        <li><strong>Homepage retro:</strong> prezentare modernă cu branding și secțiuni de storytelling</li>
+        <li><strong>Scene tematice:</strong> selecție de medii și stiluri de lume, cum ar fi sunset, neon, downtown sau ocean avenue</li>
+        <li><strong>Editor vizual:</strong> compuneri de layout-uri în stil poster, personalizabile și expresive</li>
+        <li><strong>Navigator responsive:</strong> interfață adaptată pentru desktop, tabletă și mobil</li>
+        <li><strong>Workflow creativ:</strong> experiență de producere a unei scene din concept până la export final</li>
+      </ul>
+
+      <br><br>
+
+      <h2>Tehnologii Utilizate</h2>
+      <p>Proiectul este construit cu tehnologii moderne pentru un flux rapid de dezvoltare și experiență responsivă:</p>
+      <ul>
+        <li><strong>React 19:</strong> framework principal pentru interfața aplicației</li>
+        <li><strong>Vite 8:</strong> dezvoltare rapidă și build eficient</li>
+        <li><strong>Tailwind CSS 4:</strong> stilizare rapidă și modernă</li>
+        <li><strong>Framer Motion:</strong> animații fluide și micro-interacțiuni</li>
+        <li><strong>React Router:</strong> navigare între pagini și secțiuni</li>
+        <li><strong>Lucide Icons:</strong> iconografie modernă și simplă</li>
+      </ul>
+
+      <br><br>
+
+      <h2>Instalare și Dezvoltare Locală</h2>
+      <p>Pentru a rula proiectul local, urmați acești pași:</p>
+
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>Node.js 18+</li>
+        <li>npm sau pnpm</li>
+      </ul>
+
+      <h3>Pași de Instalare</h3>
+      <ol>
+        <li>Clonați repository-ul: <code>git clone https://github.com/itsiamdev/vicecity-studio.git</code></li>
+        <li>Intrați în director: <code>cd vicecity-studio</code></li>
+        <li>Instalați dependențele: <code>npm install</code></li>
+        <li>Porniți serverul de dezvoltare: <code>npm run dev</code></li>
+      </ol>
+
+      <p>Aplicația va fi disponibilă la adresa locală afișată în terminalul Vite.</p>
+
+      <h3>Build de Producție</h3>
+      <p>Pentru a crea un build optimizat:</p>
+      <pre><code>npm run build</code></pre>
+      <p>Preview local: <code>npm run preview</code></p>
+
+      <br><br>
+
+      <h2>Structura Proiectului</h2>
+      <pre><code>vicecity-studio/
+├── public/                 # Active statice și asset-uri vizuale
+├── src/
+│   ├── assets/             # Imagini și resurse grafice
+│   ├── components/         # Componente UI și secțiuni ale aplicației
+│   ├── data/               # Date și informații despre scene
+│   ├── pages/              # Pagini de navigare și creator workflow
+│   ├── App.jsx            # Configurația principală a aplicației
+│   ├── main.jsx            # Punctul de intrare
+│   └── index.css           # Stiluri globale
+├── package.json            # Dependențe și script-uri
+├── vite.config.js          # Configurarea Vite
+├── eslint.config.js        # Reguli de linting
+├── README.md               # Documentația proiectului
+├── LICENSE                 # Licența MIT
+└── index.html              # Fișierul principal HTML</code></pre>
+
+      <br><br>
+
+      <h2>Licență</h2>
+      <p>Proiect open-source, licențiat sub <strong>MIT License</strong>.</p>
+
+      <br><br>
+
+      <h2>Link-uri</h2>
+      <p>Live demo: <a href="https://vicecity-studio-nine.vercel.app/" target="_blank">vicecity-studio-nine.vercel.app</a></p>
+      <p>Repository: <a href="https://github.com/itsiamdev/vicecity-studio" target="_blank">GitHub</a></p>
+    `,
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion", "React Router"],
+    image: "https://vicecity-studio-nine.vercel.app/assets/vice-sunset-drive-CjOsyHXI.jpg",
+    githubUrl: "https://github.com/itsiamdev/vicecity-studio",
+    liveUrl: "https://vicecity-studio-nine.vercel.app/",
+    featured: true,
+    category: "web",
+    date: "2026-09-24"
+  },
+  {
     slug: "greenweek",
     title: "Green Week",
     shortDescription: "Platformă digitală pentru protejarea mediului, dezvoltată cu React, care susține acțiuni ecologice și inițiative sustenabile.",
