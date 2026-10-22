@@ -20,6 +20,7 @@ import {
   FaEnvelope,
   FaFacebook,
   FaInstagram,
+  FaGooglePlay,
 } from "react-icons/fa6";
 
 import {
@@ -379,6 +380,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaYoutube size={20} />
+              </a>
+
+              {/* Google Play */}
+              <a
+                href="https://play.google.com/store/apps/dev?id=7610940829379856459"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Play"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaGooglePlay size={20} />
               </a>
 
               {/* Email */}
