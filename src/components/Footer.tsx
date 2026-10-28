@@ -20,6 +20,7 @@ import {
   FaEnvelope,
   FaFacebook,
   FaInstagram,
+  FaThreads,
   FaGooglePlay,
 } from "react-icons/fa6";
 
@@ -195,6 +196,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaInstagram size={20} />
+              </a>
+
+              {/* Threads */}
+              <a
+                href="https://www.threads.net/@itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Threads"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaThreads size={20} />
               </a>
 
               {/* Bluesky */}
