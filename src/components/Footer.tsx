@@ -407,7 +407,7 @@ const Footer = () => {
 
               {/* Email */}
               <a
-                href="mailto:ionitaaurel32@gmail.com"
+                href="mailto:itsiamdev@gmail.com"
                 aria-label="Email"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
