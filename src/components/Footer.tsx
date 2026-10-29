@@ -22,6 +22,7 @@ import {
   FaInstagram,
   FaThreads,
   FaGooglePlay,
+  FaChessKnight,
 } from "react-icons/fa6";
 
 import {
@@ -403,6 +404,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaGooglePlay size={20} />
+              </a>
+
+              {/* Chess.com */}
+              <a
+                href="https://www.chess.com/member/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chess.com"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaChessKnight size={20} />
               </a>
 
               {/* Email */}
