@@ -29,6 +29,7 @@ import {
   SiBluesky,
   SiCoinbase,
   SiDailydotdev,
+  SiFreecodecamp,
 } from "react-icons/si";
 
 const Footer = () => {
@@ -415,6 +416,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <FaChessKnight size={20} />
+              </a>
+
+              {/* FreeCodeCamp */}
+              <a
+                href="https://www.freecodecamp.org/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="FreeCodeCamp"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiFreecodecamp size={20} />
               </a>
 
               {/* Email */}
