@@ -3,13 +3,14 @@ import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import NotFound from "@/pages/NotFound";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/data/content";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ExternalLink, Github, Calendar, Folder } from "lucide-react";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { data: projects = [] } = useProjects();
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {

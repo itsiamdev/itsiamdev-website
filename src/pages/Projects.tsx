@@ -5,10 +5,11 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/data/content";
 import { ExternalLink, Github, ArrowRight, Sparkles } from "lucide-react";
 
 const Projects = () => {
+  const { data: projects = [] } = useProjects();
   const allProjects = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (

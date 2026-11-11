@@ -5,14 +5,15 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, Share2, ArrowRight, Heart } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { useBlogPosts } from "@/data/content";
 import { Helmet } from "react-helmet";
 import NotFound from "./NotFound";
-import parse, { DOMNode, Element, Text } from 'html-react-parser';
+import parse, { Element, Text } from 'html-react-parser';
 import CodeBlock from "@/components/CodeBlock";
 
 const BlogPost = () => {
   const { slug } = useParams();
+  const { data: blogPosts = [] } = useBlogPosts();
   const post = blogPosts.find((p) => p.slug === slug);
   const [likedPosts, setLikedPosts] = useState<Set<string>>(() => {
     const saved = localStorage.getItem("likedPosts");
@@ -145,7 +146,7 @@ const BlogPost = () => {
                       const className = codeElement.attribs?.class || '';
                       const language = className.replace('language-', '') || 'text';
                       
-                      const getRawContent = (children: DOMNode[] | undefined): string => {
+                      const getRawContent = (children: Element['children'] | undefined): string => {
                         if (!children) return '';
                         return children.map((child) => {
                           if (child.type === 'text') return (child as Text).data;

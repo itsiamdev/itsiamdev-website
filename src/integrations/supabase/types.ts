@@ -48,6 +48,7 @@ export interface Database {
           author_avatar?: string;
           related_posts?: string;
         }
+        Relationships: [];
       }
       projects: {
         Row: {
@@ -94,6 +95,7 @@ export interface Database {
           category?: string;
           date?: string;
         }
+        Relationships: [];
       }
       skills: {
         Row: {
@@ -119,6 +121,7 @@ export interface Database {
           icon?: string;
           display_order?: number;
         }
+        Relationships: [];
       }
       certifications: {
         Row: {
@@ -150,7 +153,12 @@ export interface Database {
           credential_url?: string;
           description?: string;
         }
+        Relationships: [];
       }
     }
+    Views: { [_ in never]: never };
+    Functions: { [_ in never]: never };
+    Enums: { [_ in never]: never };
+    CompositeTypes: { [_ in never]: never };
   }
 }

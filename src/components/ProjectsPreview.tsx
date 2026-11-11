@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/data/content";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const ProjectsPreview = () => {
+  const { data: projects = [] } = useProjects();
   const recentProjects = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 
   return (

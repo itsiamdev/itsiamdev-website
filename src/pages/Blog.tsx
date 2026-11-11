@@ -4,10 +4,12 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { useBlogPosts } from "@/data/content";
 import { Helmet } from "react-helmet";
 
 const Blog = () => {
+  const { data: blogPosts = [] } = useBlogPosts();
+
   return (
     <>
       <Helmet>

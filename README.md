@@ -120,6 +120,20 @@ The blog contains multiple in-depth articles:
 9. **Deploy to GitHub Pages**: `npm run deploy`
 10. **Linting**: `npm run lint` to check code quality
 
+## Admin content management
+
+The `/admin` page uses Supabase Auth and the `blog_posts` and `projects` tables. Configure `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` in `.env`, run the complete `supabase/migrations/20261111204300_admin_content_policies.sql` script in the Supabase SQL Editor (it creates both tables and configures their security policies), and create the administrator account in Supabase Auth.
+
+Grant that account the `admin` role in its trusted `app_metadata` (not user-editable metadata) by running this in the Supabase SQL Editor, replacing the email:
+
+```sql
+update auth.users
+set raw_app_meta_data = coalesce(raw_app_meta_data, '{}'::jsonb) || '{"role":"admin"}'::jsonb
+where email = 'admin@example.com';
+```
+
+Sign out and back in after setting the role so the refreshed access token includes the claim. The database row-level security policies enforce writes; never put a Supabase service-role key in the frontend. Articles and projects entered in `/admin` are saved to Supabase and shown on the public listing, detail, and homepage preview pages.
+
 ## Project Structure 📁
 ```
 ionitaaurelmihai/
@@ -168,6 +182,7 @@ ionitaaurelmihai/
 - `/blog/:slug` - Individual blog post with likes, sharing, and related posts
 - `/projects` - All projects in a sortable grid with SEO optimization
 - `/projects/:slug` - Individual project detail page
+- `/admin` - Secure admin sign-in and content management for articles and projects
 - `/certificari` - Full certifications page with all credentials and download links
 - `/politica-de-confidentialitate` - Cookie and privacy policy page
 - `/termeni-si-conditii` - Terms and conditions of use

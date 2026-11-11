@@ -3,9 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Calendar, Clock } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { useBlogPosts } from "@/data/content";
 
 const BlogPreview = () => {
+  const { data: blogPosts = [] } = useBlogPosts();
   const latestPosts = [...blogPosts]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 3);

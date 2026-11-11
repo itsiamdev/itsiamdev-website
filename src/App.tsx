@@ -12,6 +12,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import CertificationsPage from "./pages/CertificationsPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 import CustomCursor from "./components/CustomCursor";
 import ChatBot from "./components/ChatBot";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/politica-de-confidentialitate" element={<PrivacyPolicy />} />
           <Route path="/termeni-si-conditii" element={<TermsAndConditions />} />
           <Route path="/certificari" element={<CertificationsPage />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CookieBanner />
