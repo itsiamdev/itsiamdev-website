@@ -362,18 +362,7 @@ const Footer = () => {
               >
                 <FaSpotify size={20} />
               </a>
-
-              {/* Ethereum */}
-              <a
-                href="https://ethereum.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Ethereum"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <FaEthereum size={20} />
-              </a>
-
+              
               {/* Coinbase */}
               <a
                 href="https://coinbase.com/itsiamdev"
