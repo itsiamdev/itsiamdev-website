@@ -14,7 +14,10 @@ import {
   Coffee,
   ChevronLeft,
   ChevronRight,
+  FileText,
 } from "lucide-react";
+
+const cvPdfUrl = `/cv/${encodeURIComponent("Aurel Ionita Frontend Developer CV.pdf")}`;
 
 const aboutImages = [
   {
@@ -65,7 +68,7 @@ const About = () => {
               și impact pe termen lung.
             </p>
           </div>
-          <div className="pt-6">
+          <div className="flex flex-wrap gap-3 pt-6">
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
               <DialogTrigger asChild>
                 <Button variant="outline" className="gap-2">
@@ -158,6 +161,12 @@ const About = () => {
                 </div>
               </DialogContent>
             </Dialog>
+            <Button asChild variant="outline" className="gap-2">
+              <a href={cvPdfUrl} target="_blank" rel="noopener noreferrer">
+                <FileText className="w-4 h-4" />
+                Vezi CV
+              </a>
+            </Button>
           </div>
         </div>
 

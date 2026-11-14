@@ -22,11 +22,6 @@ const NotFound = () => {
         </div>
 
         <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
-          <Badge variant="outline" className="mb-6 border-primary/30 text-primary">
-            <Home className="mr-1 h-3 w-3" aria-hidden="true" />
-            Eroare 404
-          </Badge>
-
           <div className="relative mx-auto mb-8 w-fit">
             <span
               aria-hidden="true"
