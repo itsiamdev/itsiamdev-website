@@ -12,12 +12,14 @@ import ProjectDetail from "./pages/ProjectDetail";
 import CertificationsPage from "./pages/CertificationsPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import DownloadApp from "./pages/DownloadApp";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 import CustomCursor from "./components/CustomCursor";
 import ChatBot from "./components/ChatBot";
 import BackgroundMusic from "./components/BackgroundMusic";
 import CookieBanner from "./components/CookieBanner";
+import InstallAppProvider from "./components/InstallAppProvider";
 
 const queryClient = new QueryClient();
 
@@ -40,19 +42,22 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:slug" element={<ProjectDetail />} />
-          <Route path="/politica-de-confidentialitate" element={<PrivacyPolicy />} />
-          <Route path="/termeni-si-conditii" element={<TermsAndConditions />} />
-          <Route path="/certificari" element={<CertificationsPage />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <InstallAppProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:slug" element={<ProjectDetail />} />
+            <Route path="/descarca-aplicatia" element={<DownloadApp />} />
+            <Route path="/politica-de-confidentialitate" element={<PrivacyPolicy />} />
+            <Route path="/termeni-si-conditii" element={<TermsAndConditions />} />
+            <Route path="/certificari" element={<CertificationsPage />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </InstallAppProvider>
         <CookieBanner />
       </BrowserRouter>
     </TooltipProvider>
