@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import InstallApp from "@/components/InstallApp";
 
 import {
   FaXTwitter,
@@ -143,6 +144,10 @@ const Footer = () => {
                 >
                   Termeni și Condiții
                 </Link>
+              </li>
+
+              <li>
+                <InstallApp />
               </li>
 
             </ul>
