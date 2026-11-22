@@ -31,6 +31,7 @@ import {
   SiCoinbase,
   SiDailydotdev,
   SiFreecodecamp,
+  SiTryhackme,
 } from "react-icons/si";
 
 const Footer = () => {
@@ -421,6 +422,17 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <SiFreecodecamp size={20} />
+              </a>
+
+              {/* TryHackMe */}
+              <a
+                href="https://tryhackme.com/p/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TryHackMe"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiTryhackme size={20} />
               </a>
 
               {/* Email */}
