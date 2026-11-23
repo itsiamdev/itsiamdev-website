@@ -24,12 +24,14 @@ import {
   FaThreads,
   FaGooglePlay,
   FaChessKnight,
+  FaDiscord,
 } from "react-icons/fa6";
 
 import {
   SiBluesky,
   SiCoinbase,
   SiDailydotdev,
+  SiDevdotto,
   SiFreecodecamp,
   SiTryhackme,
 } from "react-icons/si";
@@ -272,6 +274,73 @@ const Footer = () => {
                 <FaGithub size={20} />
               </a>
 
+              {/* Medium */}
+              <a
+                href="https://medium.com/@itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M13.54 12.01c0 3.01-2.44 5.45-5.45 5.45S2.64 15.02 2.64 12.01 5.08 6.56 8.09 6.56s5.45 2.44 5.45 5.45Zm6.82 0c0 2.85-1.22 5.16-2.72 5.16s-2.72-2.31-2.72-5.16 1.22-5.16 2.72-5.16 2.72 2.31 2.72 5.16Zm2 0c0 2.55-.43 4.62-.96 4.62s-.96-2.07-.96-4.62.43-4.62.96-4.62.96 2.07.96 4.62Z" />
+                </svg>
+              </a>
+
+              {/* Codédex */}
+              <a
+                href="https://www.codedex.io/@itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Codédex"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <path d="m9 8-4 4 4 4M15 8l4 4-4 4" />
+                </svg>
+              </a>
+
+              {/* Discord */}
+              <a
+                href="https://discord.com/users/1453371795347476530"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaDiscord size={20} />
+              </a>
+
+              {/* DEV */}
+              <a
+                href="https://dev.to/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DEV"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiDevdotto size={20} />
+              </a>
+
               {/* Codeberg */}
               <a
                 href="https://codeberg.org/itsiamdev"
@@ -316,7 +385,7 @@ const Footer = () => {
 
               {/* Stack Overflow */}
               <a
-                href="https://stackoverflow.com/users/itsiamdev"
+                href="https://stackoverflow.com/users/32829777/itsiamdev"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Stack Overflow"
