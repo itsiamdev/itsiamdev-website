@@ -272,6 +272,26 @@ const Footer = () => {
                 <FaGithub size={20} />
               </a>
 
+              {/* Codeberg */}
+              <a
+                href="https://codeberg.org/itsiamdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Codeberg"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M12 1.5 2.4 17.3A12.7 12.7 0 0 0 12 22.5a12.7 12.7 0 0 0 9.6-5.2L12 1.5Zm0 4.2 5.7 10.1a8.7 8.7 0 0 1-5.7 2.7 8.7 8.7 0 0 1-5.7-2.7L12 5.7Z" />
+                </svg>
+              </a>
+
               {/* Daily.dev */}
               <a
                 href="https://app.daily.dev/itsiamdev"
