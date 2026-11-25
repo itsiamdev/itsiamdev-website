@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowDownToLine,
   Check,
@@ -20,10 +20,28 @@ const DownloadApp = () => {
   const { installPrompt, isInstalled, isIos, isAndroid, installApp } =
     useInstallApp();
   const [showInstructions, setShowInstructions] = useState(false);
+  const instructionsRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (showInstructions) {
+      instructionsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [showInstructions]);
 
   const handleInstallClick = async () => {
     if (installPrompt) {
       await installApp();
+      return;
+    }
+
+    if (showInstructions) {
+      instructionsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
       return;
     }
 
@@ -193,8 +211,10 @@ const DownloadApp = () => {
 
             {!isInstalled && showInstructions && (
               <section
-                className="mt-8 rounded-2xl border border-border/60 bg-card/50 p-6 md:p-8"
+                ref={instructionsRef}
+                className="mt-8 scroll-mt-24 rounded-2xl border border-border/60 bg-card/50 p-6 md:p-8"
                 aria-labelledby="install-instructions-heading"
+                tabIndex={-1}
               >
                 <div className="mb-6">
                   <p className="mb-2 text-sm font-medium uppercase tracking-[0.16em] text-primary">
