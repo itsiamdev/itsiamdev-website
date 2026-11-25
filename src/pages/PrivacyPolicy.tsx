@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
                   <li><strong className="text-foreground">Dreptul de a depune o plângere</strong> — la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</li>
                 </ul>
                 <p className="mt-4">
-                  Pentru a vă exercita aceste drepturi, ne puteți contacta la adresa de e-mail menționată în secțiunea 12.
+                  Pentru a vă exercita aceste drepturi, ne puteți contacta folosind datele de contact disponibile în footer.
                 </p>
               </section>
 
@@ -175,18 +175,6 @@ const PrivacyPolicy = () => {
                 </p>
               </section>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">14. Contact</h2>
-                <p>
-                  Pentru orice întrebări, solicitări sau preocupări legate de această Politică de Confidențialitate sau de prelucrarea datelor dumneavoastră personale, ne puteți contacta la:
-                </p>
-                <div className="mt-4 p-6 bg-muted/50 rounded-lg border border-border/50">
-                  <p className="text-foreground font-medium">Ioniță Aurel Mihai</p>
-                  <p>E-mail: <a href="mailto:itsiamdev@gmail.com" className="text-primary hover:underline">itsiamdev@gmail.com</a></p>
-                  <p>Site web: <a href="https://itsiamdev.com/" className="text-primary hover:underline">itsiamdev.com</a></p>
-                  <p>Răspundem în maxim 30 de zile calendaristice de la primirea solicitării.</p>
-                </div>
-              </section>
             </div>
           </div>
         </main>
