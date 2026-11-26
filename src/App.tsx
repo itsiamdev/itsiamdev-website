@@ -20,6 +20,7 @@ import ChatBot from "./components/ChatBot";
 import BackgroundMusic from "./components/BackgroundMusic";
 import CookieBanner from "./components/CookieBanner";
 import InstallAppProvider from "./components/InstallAppProvider";
+import Linktree from "./pages/Linktree";
 
 const queryClient = new QueryClient();
 
@@ -33,19 +34,28 @@ const ScrollToTop = () => {
   return null;
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <CustomCursor />
-      <ChatBot />
-      <BackgroundMusic />
+const AppContent = () => {
+  const { pathname } = useLocation();
+  const isLinkPage = pathname === "/links" || pathname === "/linktree";
+
+  return (
+    <>
+      {!isLinkPage && (
+        <>
+          <CustomCursor />
+          <ChatBot />
+          <BackgroundMusic />
+          <CookieBanner />
+        </>
+      )}
       <Toaster />
       <Sonner />
-      <BrowserRouter>
         <InstallAppProvider>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/links" element={<Linktree />} />
+            <Route path="/linktree" element={<Linktree />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/projects" element={<Projects />} />
@@ -58,7 +68,15 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </InstallAppProvider>
-        <CookieBanner />
+    </>
+  );
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <BrowserRouter>
+        <AppContent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
