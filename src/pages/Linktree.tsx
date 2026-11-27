@@ -115,7 +115,7 @@ const Linktree = () => {
             <div className="relative mx-auto mb-5 h-28 w-28">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-blue-500 p-[3px] shadow-[0_0_35px_rgba(34,211,238,0.18)]">
                 <img
-                  src="/ionitaaurelmihai.jpg"
+                  src="/icons/profileblog.png"
                   alt="Ioniță Aurel Mihai"
                   className="h-full w-full rounded-full object-cover object-top"
                 />
