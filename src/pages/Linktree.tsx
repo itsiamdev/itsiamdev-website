@@ -195,6 +195,10 @@ const Linktree = () => {
             })}
           </div>
 
+          <p className="mt-7 text-center text-sm font-medium text-muted-foreground uppercase tracking-wider">
+            Rețele sociale
+          </p>
+
           <nav
             className="mx-auto mt-7 flex max-w-md flex-wrap justify-center gap-3"
             aria-label="Rețele sociale"
